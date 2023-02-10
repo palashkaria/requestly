@@ -6,4 +6,14 @@ import svgrPlugin from "vite-plugin-svgr";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), viteTsconfigPaths(), svgrPlugin()],
+  css: {
+    preprocessorOptions: {
+      less: {
+        javascriptEnabled: true,
+      },
+    },
+  },
+  resolve: {
+    alias: [{ find: /^~/, replacement: "" }],
+  },
 });
