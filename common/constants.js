@@ -204,4 +204,4 @@ CONSTANTS.REQUEST_STATE = {
   COMPLETE: "COMPLETE",
 };
 
-module.exports = CONSTANTS;
+export default CONSTANTS;
