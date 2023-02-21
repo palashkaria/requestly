@@ -116,7 +116,11 @@ const getMockEditorDataForFile = (
   return mockEditorData;
 };
 
-export const createMockFromUploadedFile = async (uid: string, file: File) => {
+export const createMockFromUploadedFile = async (
+  uid: string,
+  file: File,
+  workspaceId: string | null
+) => {
   // TODO: ADD MAX FILE SIZE CHECK HERE
   return new Promise((resolve, reject) => {
     var reader = new FileReader();
@@ -130,7 +134,7 @@ export const createMockFromUploadedFile = async (uid: string, file: File) => {
         mockEditorData
       );
 
-      await createMock(uid, mockData).then((mockId) => {
+      await createMock(uid, mockData, workspaceId).then((mockId) => {
         if (mockId) {
           mockData.id = mockId;
           return resolve(mockData);

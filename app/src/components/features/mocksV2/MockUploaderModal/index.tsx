@@ -4,6 +4,10 @@ import { trackCreateMockEvent } from "modules/analytics/events/features/mocksV2"
 import React from "react";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import {
+  getCurrentlyActiveWorkspace,
+  getIsWorkspaceMode,
+} from "store/features/teams/selectors";
 import { getUserAuthDetails } from "store/selectors";
 import {
   redirectToFileMockEditorEditMock,
@@ -27,13 +31,17 @@ const MockUploaderModal: React.FC<Props> = ({
   mockType,
 }) => {
   const user = useSelector(getUserAuthDetails);
+  const workspace = useSelector(getCurrentlyActiveWorkspace);
+  const isWorkspaceMode = useSelector(getIsWorkspaceMode);
   const uid = user?.details?.profile?.uid;
+  const workspaceId = isWorkspaceMode ? workspace?.id : null;
 
   const navigate = useNavigate();
 
   const handleFileSelection = async (uploadOptions: any) => {
     toast.loading(`Creating Mock from file ${uploadOptions.file.name}`);
-    await createMockFromUploadedFile(uid, uploadOptions.file)
+
+    await createMockFromUploadedFile(uid, uploadOptions.file, workspaceId)
       .then((mock: RQMockSchema) => {
         toast.success("Mock Created Successfully");
         uploadOptions.onSuccess("OK");

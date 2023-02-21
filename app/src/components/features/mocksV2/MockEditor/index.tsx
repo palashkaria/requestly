@@ -30,6 +30,10 @@ import {
   trackCreateMockEvent,
   trackUpdateMockEvent,
 } from "modules/analytics/events/features/mocksV2";
+import {
+  getCurrentlyActiveWorkspace,
+  getIsWorkspaceMode,
+} from "store/features/teams/selectors";
 
 interface Props {
   isNew?: boolean;
@@ -46,8 +50,10 @@ const MockEditorIndex: React.FC<Props> = ({
 }) => {
   const navigate = useNavigate();
   const user = useSelector(getUserAuthDetails);
+  const workspace = useSelector(getCurrentlyActiveWorkspace);
+  const isWorkspaceMode = useSelector(getIsWorkspaceMode);
   const uid = user?.details?.profile?.uid;
-
+  const workspaceId = isWorkspaceMode ? workspace?.id : null;
   const [mockEditorData, setMockEditorData] = useState<MockEditorDataSchema>(
     null
   );
@@ -76,7 +82,7 @@ const MockEditorIndex: React.FC<Props> = ({
 
     const finalMockData = editorDataToMockDataConverter(data);
     if (isNew) {
-      return createMock(uid, finalMockData).then((mockId) => {
+      return createMock(uid, finalMockData, workspaceId).then((mockId) => {
         setSavingInProgress(false);
         if (mockId) {
           toast.success("Mock Created Successfully");
