@@ -57,7 +57,7 @@ const createMockFromFirebase = async (
 ): Promise<string | null> => {
   const db = getFirestore(firebaseApp);
   const rootMocksCollectionRef = collection(db, "mocks");
-  const ownerId = `team-${workspaceId}` || uid;
+  const ownerId = workspaceId ? `team-${workspaceId}` : uid;
   const mockId: string | null = await addDoc(rootMocksCollectionRef, {
     ...mockData,
     ownerId,
