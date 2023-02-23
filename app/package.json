@@ -18,10 +18,11 @@
     "url": "https://requestly.io/"
   },
   "scripts": {
-    "build": "craco build",
     "eject": "react-scripts eject",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
-    "start": "craco start",
+    "start": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview",
     "test": "craco test --watchAll=false",
     "lint": "eslint --fix --ext .js,.jsx .",
     "dev": "REACT_APP_ENV=DEV npm start",
@@ -122,11 +123,16 @@
     "@types/react-window": "^1.8.5",
     "@types/semver": "^7.3.13",
     "@types/uuid": "^9.0.0",
+    "@vitejs/plugin-react": "^3.1.0",
+    "eslint-plugin-flowtype": "8.0.3",
     "monaco-editor-webpack-plugin": "^7.0.1",
     "process": "^0.11.10",
     "sass": "^1.58.3",
     "source-map-loader": "^3.0.1",
-    "typescript": "^4.7.3"
+    "typescript": "^4.7.3",
+    "vite": "^4.1.1",
+    "vite-plugin-svgr": "^2.4.0",
+    "vite-tsconfig-paths": "^4.0.5"
   },
   "jest": {
     "transformIgnorePatterns": [
