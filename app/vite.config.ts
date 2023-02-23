@@ -23,7 +23,7 @@ export default defineConfig({
   build: {
     commonjsOptions: {
       transformMixedEsModules: true,
-      include: [/node_modules/, /requestly-core\/index.js/],
+      include: [/node_modules/, /requestly-core/],
     },
   },
 });
