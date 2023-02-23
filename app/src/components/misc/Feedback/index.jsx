@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import { FrownOutlined, MehOutlined, SmileOutlined } from "@ant-design/icons";
 import { Row, Col, Card, Button, Input, Rate } from "antd";
-import { toast } from "utils/Toast.js";
+import { toast } from "utils/Toast.jsx";
 import { getUserAuthDetails } from "../../../store/selectors";
 import axios from "axios";
 import { getFunctions, httpsCallable } from "firebase/functions";

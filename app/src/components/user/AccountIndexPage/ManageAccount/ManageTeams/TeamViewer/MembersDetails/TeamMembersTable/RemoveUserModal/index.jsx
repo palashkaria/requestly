@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button, Col, Row } from "antd";
-import { toast } from "utils/Toast.js";
+import { toast } from "utils/Toast.jsx";
 import { getFunctions, httpsCallable } from "firebase/functions";
 import { RQModal } from "lib/design-system/components";
 import "./RemoveUserModal.css";

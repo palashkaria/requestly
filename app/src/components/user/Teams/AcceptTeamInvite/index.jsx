@@ -10,7 +10,7 @@ import SpinnerColumn from "../../../misc/SpinnerColumn";
 import { isEmpty } from "lodash";
 // UTILS
 import { redirectToAccountDetails } from "../../../../utils/RedirectionUtils";
-import { toast } from "utils/Toast.js";
+import { toast } from "utils/Toast.jsx";
 import Jumbotron from "components/bootstrap-legacy/jumbotron";
 import { CheckCircleFilled, CloseCircleFilled } from "@ant-design/icons";
 

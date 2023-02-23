@@ -13,7 +13,7 @@ import {
 import { Button, Typography } from "antd";
 import Select from "react-select";
 import { isEmpty } from "lodash";
-import { toast } from "utils/Toast.js";
+import { toast } from "utils/Toast.jsx";
 // UTILS
 import DataStoreUtils from "../../../../../utils/DataStoreUtils";
 import { getUserAuthDetails } from "../../../../../store/selectors";

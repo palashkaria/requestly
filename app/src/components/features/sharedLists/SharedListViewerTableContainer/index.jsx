@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Button } from "antd";
-import { toast } from "utils/Toast.js";
+import { toast } from "utils/Toast.jsx";
 import { useLocation, useNavigate } from "react-router-dom";
 //ACTIONS
 import {

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { Row, Col } from "antd";
-import { toast } from "utils/Toast.js";
+import { toast } from "utils/Toast.jsx";
 //SUB COMPONENTS
 import SpinnerColumn from "../../../misc/SpinnerColumn";
 import FileEditor from "../FileEditor";

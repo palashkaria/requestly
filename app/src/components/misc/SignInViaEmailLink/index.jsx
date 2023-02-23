@@ -12,7 +12,7 @@ import { isEmailValid } from "../../../utils/FormattingHelper";
 // ACTIONS
 import { signInWithEmailLink } from "../../../actions/FirebaseActions";
 import { handleLogoutButtonOnClick } from "../../authentication/AuthForm/actions";
-import { toast } from "utils/Toast.js";
+import { toast } from "utils/Toast.jsx";
 import Jumbotron from "components/bootstrap-legacy/jumbotron";
 import { actions } from "store";
 import { getIsWorkspaceMode } from "store/features/teams/selectors";

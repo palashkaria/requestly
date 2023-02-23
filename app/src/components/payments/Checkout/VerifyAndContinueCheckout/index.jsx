@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState, useCallback } from "react";
 import { useSelector } from "react-redux";
-import { toast } from "utils/Toast.js";
+import { toast } from "utils/Toast.jsx";
 // Firebase
 import { getFunctions, httpsCallable } from "firebase/functions";
 import { getUserAuthDetails } from "../../../../store/selectors";

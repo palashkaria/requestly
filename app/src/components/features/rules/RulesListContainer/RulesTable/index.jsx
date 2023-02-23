@@ -57,7 +57,7 @@ import moment from "moment";
 import ReactHoverObserver from "react-hover-observer";
 import Text from "antd/lib/typography/Text";
 import { StorageService } from "init";
-import { toast } from "utils/Toast.js";
+import { toast } from "utils/Toast.jsx";
 import {
   deleteGroup,
   ungroupSelectedRules,

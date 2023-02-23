@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 import isEmpty from "is-empty";
 import APP_CONSTANTS from "./config/constants";
 import { getAuthInitialization } from "./store/selectors";
-import { submitAppDetailAttributes } from "utils/AnalyticsUtils.js";
+import { submitAppDetailAttributes } from "utils/AnalyticsUtils.jsx";
 import removePreloader from "./actions/UI/removePreloader";
 import { ConfigProvider } from "antd";
 import enUS from "antd/lib/locale/en_US";

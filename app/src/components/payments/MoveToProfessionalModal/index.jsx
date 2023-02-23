@@ -3,7 +3,7 @@ import { Col, Modal, Row } from "antd";
 import { ExclamationCircleOutlined } from "@ant-design/icons";
 import { getFunctions, httpsCallable } from "firebase/functions";
 // Utils
-import { toast } from "utils/Toast.js";
+import { toast } from "utils/Toast.jsx";
 import Text from "antd/lib/typography/Text";
 import { AddUser, Document, Filter } from "react-iconly";
 import Title from "antd/lib/typography/Title";

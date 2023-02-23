@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Row, Col, Alert } from "antd";
-import { toast } from "utils/Toast.js";
+import { toast } from "utils/Toast.jsx";
 //Firebase
 import { getFunctions, httpsCallable } from "firebase/functions";
 // UTILS

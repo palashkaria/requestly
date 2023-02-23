@@ -1,4 +1,4 @@
-import { toast } from "utils/Toast.js";
+import { toast } from "utils/Toast.jsx";
 //Action
 import { uploadNewFile } from "../../../../../utils/files/FilesService";
 

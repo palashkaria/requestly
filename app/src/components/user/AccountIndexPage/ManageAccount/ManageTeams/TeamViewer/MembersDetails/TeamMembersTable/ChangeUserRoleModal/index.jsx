@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaSpinner } from "react-icons/fa";
-import { toast } from "utils/Toast.js";
+import { toast } from "utils/Toast.jsx";
 import { Modal, Button } from "antd";
 // Firebase
 import { getFunctions, httpsCallable } from "firebase/functions";

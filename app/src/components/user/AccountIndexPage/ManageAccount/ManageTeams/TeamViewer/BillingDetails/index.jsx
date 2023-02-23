@@ -5,7 +5,7 @@ import SubscriptionActionButtons from "./SubscriptionActionButtons";
 import SpinnerColumn from "../../../../../../misc/SpinnerColumn";
 import { getFunctions, httpsCallable } from "firebase/functions";
 import BillingFooter from "./BillingFooter";
-import { toast } from "utils/Toast.js";
+import { toast } from "utils/Toast.jsx";
 import APP_CONSTANTS from "config/constants";
 import "./BillingDetails.css";
 

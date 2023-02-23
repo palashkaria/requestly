@@ -4,7 +4,7 @@ import { FileSyncOutlined } from "@ant-design/icons";
 // import _ from "lodash";
 import debounce from "lodash.debounce";
 import SpinnerCard from "../../misc/SpinnerCard";
-import { toast } from "utils/Toast.js";
+import { toast } from "utils/Toast.jsx";
 //UTILS
 import {
   getLastBackupTimeStamp,

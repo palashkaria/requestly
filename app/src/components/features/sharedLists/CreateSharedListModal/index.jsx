@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { Button, Col, Row, Radio, Tag, Space, Tooltip, Typography } from "antd";
 import { AiOutlineLink } from "react-icons/ai";
 import { Modal } from "antd";
-import { toast } from "utils/Toast.js";
+import { toast } from "utils/Toast.jsx";
 import CreatableSelect from "react-select/creatable";
 import EditableTable from "./editableTable";
 import { PostConfirmationModal } from "./PostConfirmationModal";

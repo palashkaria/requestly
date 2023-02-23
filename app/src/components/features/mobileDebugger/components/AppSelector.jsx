@@ -14,7 +14,7 @@ import {
 import { APP_PLATFORMS_MAP } from "../screens/createApp/constants";
 import { getSdkApps } from "../utils/sdkUtils";
 import { AuthConfirmationPopover } from "components/hoc/auth/AuthConfirmationPopover";
-import { AUTH } from "modules/analytics/events/common/constants.js";
+import { AUTH } from "modules/analytics/events/common/constants.jsx";
 
 const { Title } = Typography;
 

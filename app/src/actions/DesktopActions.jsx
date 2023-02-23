@@ -1,4 +1,4 @@
-import { toast } from "utils/Toast.js";
+import { toast } from "utils/Toast.jsx";
 
 export function getAppVersion() {
   return window.RQ && window.RQ.DESKTOP && window.RQ.DESKTOP.VERSION;

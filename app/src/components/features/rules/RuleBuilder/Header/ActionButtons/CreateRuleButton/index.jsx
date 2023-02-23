@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Button, Tooltip } from "antd";
 import { useNavigate } from "react-router-dom";
-import { toast } from "utils/Toast.js";
+import { toast } from "utils/Toast.jsx";
 //UTILS
 import {
   getAppMode,

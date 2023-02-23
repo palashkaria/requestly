@@ -1,7 +1,7 @@
 import { isExtensionInstalled } from "actions/ExtensionActions";
 import { CONSTANTS as GLOBAL_CONSTANTS } from "@requestly/requestly-core";
 import APP_CONSTANTS from "config/constants";
-import { toast } from "utils/Toast.js";
+import { toast } from "utils/Toast.jsx";
 import { getAttrFromFirebase, submitAttrUtil } from "./AnalyticsUtils";
 import { dateObjToDateString, getOldestDate } from "./DateTimeUtils";
 import { trackDesktopAppInstalled } from "modules/analytics/events/misc/installation";

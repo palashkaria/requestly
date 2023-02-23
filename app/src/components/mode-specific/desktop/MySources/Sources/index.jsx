@@ -12,7 +12,7 @@ import {
 } from "antd";
 import { InfoCircleOutlined } from "@ant-design/icons";
 import { Link, useNavigate } from "react-router-dom";
-import { toast } from "utils/Toast.js";
+import { toast } from "utils/Toast.jsx";
 // SUB COMPONENTS
 import CloseConfirmModal from "./ErrorHandling/CloseConfirmModal";
 // CONSTANTS

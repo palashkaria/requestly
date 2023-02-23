@@ -16,7 +16,7 @@ import { isEmpty } from "lodash";
 import { getFunctions, httpsCallable } from "firebase/functions";
 // Sub Components
 import SpinnerColumn from "../../../../../../../misc/SpinnerColumn";
-import { toast } from "utils/Toast.js";
+import { toast } from "utils/Toast.jsx";
 // Utils
 import { redirectToMyTeams } from "../../../../../../../../utils/RedirectionUtils";
 import { getUserAuthDetails } from "../../../../../../../../store/selectors";

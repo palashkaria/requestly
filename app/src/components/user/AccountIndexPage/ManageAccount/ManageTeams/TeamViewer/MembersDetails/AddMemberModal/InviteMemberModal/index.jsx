@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { toast } from "utils/Toast.js";
+import { toast } from "utils/Toast.jsx";
 import { Row, Col, Button } from "antd";
 import { getFunctions, httpsCallable } from "firebase/functions";
 import { RQModal } from "lib/design-system/components";

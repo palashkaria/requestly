@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Row, Button, Input } from "antd";
 import { Modal } from "antd";
-import { toast } from "utils/Toast.js";
+import { toast } from "utils/Toast.jsx";
 //ICONS
 import { FaSpinner } from "react-icons/fa";
 //SUB COMPONENTS

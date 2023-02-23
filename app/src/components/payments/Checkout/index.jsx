@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Row, Col } from "antd";
 import { Spin } from "antd";
 import { LoadingOutlined } from "@ant-design/icons";
-import { toast } from "utils/Toast.js";
+import { toast } from "utils/Toast.jsx";
 import TextLoop from "react-text-loop";
 // STRIPE
 import { useStripe, Elements } from "@stripe/react-stripe-js";

@@ -2,7 +2,7 @@ import React, { useState, useCallback, useEffect } from "react";
 import { CardBody } from "reactstrap";
 import { Col, Row, Card, Button } from "antd";
 // import { store } from "../../../store";
-import { toast } from "utils/Toast.js";
+import { toast } from "utils/Toast.jsx";
 import isEmpty from "is-empty";
 //SUB COMPONENTS
 import SpinnerCard from "../../misc/SpinnerCard";

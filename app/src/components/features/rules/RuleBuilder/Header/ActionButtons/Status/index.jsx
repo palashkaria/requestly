@@ -10,7 +10,7 @@ import {
   getUserAuthDetails,
 } from "../../../../../../../store/selectors";
 import { Switch } from "antd";
-import { toast } from "utils/Toast.js";
+import { toast } from "utils/Toast.jsx";
 import { saveRule } from "../actions/index";
 import "./RuleEditorStatus.css";
 import { trackRuleEditorHeaderClicked } from "modules/analytics/events/common/rules";

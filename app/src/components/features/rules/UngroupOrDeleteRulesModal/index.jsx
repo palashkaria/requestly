@@ -11,7 +11,7 @@ import {
 } from "store/selectors";
 import APP_CONSTANTS from "config/constants";
 import { actions } from "store";
-import { toast } from "utils/Toast.js";
+import { toast } from "utils/Toast.jsx";
 import { deleteGroup } from "../RulesListContainer/RulesTable/actions";
 import {
   deleteGroupsFromStorage,

@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 //ACTIONS
 import { deleteGroupsFromStorage, deleteRulesFromStorage } from "./actions";
 import { unselectAllRules } from "../actions";
-import { toast } from "utils/Toast.js";
+import { toast } from "utils/Toast.jsx";
 import { addRecordsToTrash } from "utils/trash/TrashUtils";
 import DeleteConfirmationModal from "components/user/DeleteConfirmationModal";
 import { actions } from "store";

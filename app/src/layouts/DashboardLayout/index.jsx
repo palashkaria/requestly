@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import { Route, Routes, useLocation } from "react-router-dom";
 // Utils
-import { isPricingPage, isGoodbyePage } from "utils/PathUtils.js";
+import { isPricingPage, isGoodbyePage } from "utils/PathUtils.jsx";
 
 import { getAppMode } from "store/selectors";
 // Constants

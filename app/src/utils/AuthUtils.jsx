@@ -2,7 +2,7 @@ import firebaseApp from "../firebase";
 import { getAuth, applyActionCode, sendEmailVerification } from "firebase/auth";
 import { submitAttrUtil } from "./AnalyticsUtils";
 import DataStoreUtils from "./DataStoreUtils";
-import { toast } from "utils/Toast.js";
+import { toast } from "utils/Toast.jsx";
 import { getDateString } from "./DateTimeUtils";
 import { getAndUpdateInstallationDate } from "utils/Misc";
 import APP_CONSTANTS from "config/constants";

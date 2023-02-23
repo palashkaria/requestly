@@ -7,7 +7,7 @@ import { isExtensionInstalled } from "actions/ExtensionActions";
 import InstallExtensionCTA from "../../../../../components/misc/InstallExtensionCTA";
 import { AuthConfirmationPopover } from "components/hoc/auth/AuthConfirmationPopover";
 import { getUserAuthDetails } from "store/selectors";
-import { AUTH } from "modules/analytics/events/common/constants.js";
+import { AUTH } from "modules/analytics/events/common/constants.jsx";
 import { trackInstallExtensionDialogShown } from "modules/analytics/events/features/sessionRecording";
 const CheckItem: React.FC<{ label: string }> = ({ label }) => {
   return (

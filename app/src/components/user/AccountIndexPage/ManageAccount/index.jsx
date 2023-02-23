@@ -11,7 +11,7 @@ import {
   InputGroupText,
 } from "reactstrap";
 import { Button as AntButton } from "antd";
-import { toast } from "utils/Toast.js";
+import { toast } from "utils/Toast.jsx";
 //SUB COMPONENTS
 import ManageTeams from "./ManageTeams";
 import ActiveLicenseInfo from "./ActiveLicenseInfo";

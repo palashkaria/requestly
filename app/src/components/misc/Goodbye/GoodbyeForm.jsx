@@ -4,7 +4,7 @@ import { Input } from "antd";
 import { Modal } from "antd";
 import { useState } from "react";
 import { isEmpty } from "lodash";
-import { toast } from "utils/Toast.js";
+import { toast } from "utils/Toast.jsx";
 import { getFunctions, httpsCallable } from "firebase/functions";
 import { redirectToLandingHomePage } from "utils/RedirectionUtils";
 import { useNavigate } from "react-router-dom";

@@ -16,7 +16,7 @@ import {
   CopyOutlined,
 } from "@ant-design/icons";
 import moment from "moment";
-import { toast } from "utils/Toast.js";
+import { toast } from "utils/Toast.jsx";
 import CopyToClipboard from "react-copy-to-clipboard";
 import { getMockUrl, getDelayMockUrl } from "utils/files/urlUtils";
 import NewMockSelector from "./mockModal";

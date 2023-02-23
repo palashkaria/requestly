@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Col } from "antd";
 import { Modal } from "antd";
 import CreatableReactSelect from "react-select/creatable";
-import { toast } from "utils/Toast.js";
+import { toast } from "utils/Toast.jsx";
 //EXTERNALS
 import { StorageService } from "../../../../init";
 //CONSTANTS

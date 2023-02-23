@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import { useSelector } from "react-redux";
-import { toast } from "utils/Toast.js";
+import { toast } from "utils/Toast.jsx";
 import { CheckCircleOutlined } from "@ant-design/icons";
 import { AiFillInfoCircle } from "react-icons/ai";
 import SpinnerColumn from "../../../../misc/SpinnerColumn";

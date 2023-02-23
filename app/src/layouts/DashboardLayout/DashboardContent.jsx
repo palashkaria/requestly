@@ -18,7 +18,7 @@ import { actions } from "store";
 //UTILS
 import { getActiveModals } from "store/selectors";
 import { getRouteFromCurrentPath } from "utils/URLUtils";
-import ExtensionModal from "components/user/ExtensionModal/index.js";
+import ExtensionModal from "components/user/ExtensionModal/index.jsx";
 import FreeTrialExpiredModal from "../../components/landing/pricing/FreeTrialExpiredModal";
 import SyncConsentModal from "../../components/user/SyncConsentModal";
 import { trackPageViewEvent } from "modules/analytics/events/misc/pageView";

@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Button, Col, List, Space } from "antd";
 import { Modal } from "antd";
 import { useDropzone } from "react-dropzone";
-import { toast } from "utils/Toast.js";
+import { toast } from "utils/Toast.jsx";
 //ICONS
 import { AiOutlineWarning } from "react-icons/ai";
 import { BsFileEarmarkCheck } from "react-icons/bs";

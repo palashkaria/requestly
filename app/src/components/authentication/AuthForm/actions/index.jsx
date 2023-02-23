@@ -1,6 +1,6 @@
 import isEmpty from "is-empty";
 import isEmail from "validator/lib/isEmail";
-import { toast } from "utils/Toast.js";
+import { toast } from "utils/Toast.jsx";
 import { Modal } from "antd";
 //AUTH ACTIONS
 import {

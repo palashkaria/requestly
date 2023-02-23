@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
-import { toast } from "utils/Toast.js";
+import { toast } from "utils/Toast.jsx";
 import { Button, Row, Col } from "antd";
 import {
   getAvailableTeams,
