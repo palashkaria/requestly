@@ -1,7 +1,3 @@
-if (typeof isReactApp === "undefined") {
-  var isReactApp = typeof require !== "undefined";
-}
-
 var Logger = {
   enabled: false,
   ns: "Requestly: ",
@@ -23,10 +19,4 @@ var Logger = {
   },
 };
 
-if (isReactApp) {
-  module.exports = Logger;
-} else {
-  window.RQ = window.RQ || {};
-  window.RQ.components = window.RQ.components || {};
-  window.RQ.components.logger = Logger;
-}
+module.exports = Logger;

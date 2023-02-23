@@ -16,4 +16,13 @@ export default defineConfig({
   resolve: {
     alias: [{ find: /^~/, replacement: "" }],
   },
+  optimizeDeps: {
+    include: ["@requestly/requestly-core"],
+  },
+  build: {
+    commonjsOptions: {
+      transformMixedEsModules: true,
+      include: [/node_modules/, /requestly-core/],
+    },
+  },
 });

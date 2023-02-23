@@ -2,9 +2,6 @@
  * This module is define as CommonJS Module. We should move it to ES6 Module later on and fix the imports.
  * Right now the imports are defined using require, once changed to ES6 module we can move to import module
  */
-if (typeof isReactApp === "undefined") {
-  var isReactApp = typeof require !== "undefined";
-}
 const CONSTANTS = {};
 
 CONSTANTS.APP_MODES = {
@@ -207,9 +204,4 @@ CONSTANTS.REQUEST_STATE = {
   COMPLETE: "COMPLETE",
 };
 
-if (isReactApp) {
-  module.exports = CONSTANTS;
-} else {
-  /** For legacy apps- browser extension */
-  Object.assign(window.RQ, CONSTANTS);
-}
+module.exports = CONSTANTS;

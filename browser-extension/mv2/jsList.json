@@ -1,7 +1,7 @@
 {
   "shared": [
     "../config/dist/config.js",
-    "../../common/constants.js",
+    "../../common/constants-injected.js",
     "src/shared/constants.js",
     "src/shared/utils.js",
     "src/shared/ContentScriptMessageHandler.js",
@@ -18,7 +18,7 @@
   ],
   "client": [
     "../config/dist/config.js",
-    "../../common/constants.js",
+    "../../common/constants-injected.js",
     "src/shared/constants.js",
     "src/client/js/utils.js",
     "src/client/js/ruleMatcher.js",
@@ -32,7 +32,7 @@
   ],
   "devtools-panel": [
     "../config/dist/config.js",
-    "../../common/constants.js",
+    "../../common/constants-injected.js",
     "src/shared/constants.js",
     "src/devtools/libs/jquery-3.5.1.js",
     "src/devtools/libs/handlebars.runtime-v4.7.7.js",
@@ -42,7 +42,7 @@
   ],
   "background": [
     "dist/generated/shared.js",
-    "../../common/logger.js",
+    "../../common/logger-injected.js",
     "src/external/CircularQueue.js",
     "src/external/chromeTabService.js",
     "src/modules/StorageService.js",
