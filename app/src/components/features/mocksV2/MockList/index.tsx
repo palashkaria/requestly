@@ -22,6 +22,10 @@ import {
 import MocksTable from "./MocksTable";
 import NewFileModal from "../NewFileModal";
 import { GettingStartedWithMocks } from "./GettingStartedWithMocks";
+import {
+  getCurrentlyActiveWorkspace,
+  getIsWorkspaceMode,
+} from "store/features/teams/selectors";
 
 /* eslint-disable no-unused-vars */
 export enum MockListSource {
@@ -43,6 +47,9 @@ const MockListIndex: React.FC<Props> = ({
   const navigate = useNavigate();
   const user = useSelector(getUserAuthDetails);
   const uid = user?.details?.profile?.uid;
+  const workspace = useSelector(getCurrentlyActiveWorkspace);
+  const isWorkspaceMode = useSelector(getIsWorkspaceMode);
+  const workspaceId = isWorkspaceMode ? workspace?.id : null;
 
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [mocksList, setMocksList] = useState<RQMockMetadataSchema[]>([]);
@@ -101,7 +108,7 @@ const MockListIndex: React.FC<Props> = ({
 
   const fetchMocks = useCallback(() => {
     // API|FILE|null
-    getMocks(uid, type)
+    getMocks(uid, type, workspaceId)
       .then((data) => {
         setMocksList(data);
         setIsLoading(false);
@@ -110,7 +117,7 @@ const MockListIndex: React.FC<Props> = ({
         setMocksList([]);
         setIsLoading(false);
       });
-  }, [type, uid]);
+  }, [type, uid, workspaceId]);
 
   useEffect(() => {
     fetchMocks();

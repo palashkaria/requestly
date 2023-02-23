@@ -16,7 +16,7 @@ import { updateMockFromFirebase } from "./updateMock";
 export const createMock = async (
   uid: string,
   mockData: RQMockSchema,
-  workspaceId: string | null
+  workspaceId?: string | null
 ): Promise<string> => {
   if (!uid) {
     return null;
@@ -53,14 +53,15 @@ export const createMock = async (
 const createMockFromFirebase = async (
   uid: string,
   mockData: RQMockSchema,
-  workspaceId: string | null
+  workspaceId?: string | null
 ): Promise<string | null> => {
   const db = getFirestore(firebaseApp);
   const rootMocksCollectionRef = collection(db, "mocks");
-  const ownerId = workspaceId ? `team-${workspaceId}` : uid;
+  const ownerId = workspaceId ? workspaceId : uid;
   const mockId: string | null = await addDoc(rootMocksCollectionRef, {
     ...mockData,
     ownerId,
+    ownerType: workspaceId ? "team" : "user",
     deleted: false,
     createdTs: Timestamp.now().toMillis(),
     updatedTs: Timestamp.now().toMillis(),
