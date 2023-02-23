@@ -64,6 +64,7 @@
     "cmdk": "^0.1.21",
     "codemirror": "^5.65.2",
     "craco-less": "^2.0.0",
+    "cxs": "^6.2.0",
     "fflate": "^0.7.3",
     "firebase": "^9.6.8",
     "fuzzysort": "^2.0.4",
@@ -113,6 +114,7 @@
     "validator": "^13.7.0"
   },
   "devDependencies": {
+    "@firebase/firestore-types": "^2.5.1",
     "@requestly/web-sdk": "0.11.2",
     "@sentry/integrations": "^7.22.0",
     "@sentry/webpack-plugin": "^1.20.0",

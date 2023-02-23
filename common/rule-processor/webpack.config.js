@@ -21,7 +21,7 @@ module.exports = {
     filename: "ruleprocessors.js",
     library: {
       name: "requestlyRuleProcessors",
-      type: "umd",
+      type: "commonjs2",
     },
   },
 };

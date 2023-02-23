@@ -6,6 +6,7 @@ import svgrPlugin from "vite-plugin-svgr";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), viteTsconfigPaths(), svgrPlugin()],
+  define: { global: "globalThis" },
   css: {
     preprocessorOptions: {
       less: {
@@ -22,7 +23,7 @@ export default defineConfig({
   build: {
     commonjsOptions: {
       transformMixedEsModules: true,
-      include: [/node_modules/, /requestly-core/],
+      include: [/node_modules/, /requestly-core\/index.js/],
     },
   },
 });
