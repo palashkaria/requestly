@@ -40,6 +40,8 @@ const getMocksFromFirebase = async (
 
   let q = query(
     rootMocksRef,
+    // where("ownerType", "==", workspaceId ? "team" : "user"),
+    where("ownerType", "!=", "team"),
     where("ownerId", "==", ownerQueryId), // team-{workspaceId} or userId
     where("deleted", "in", [false])
   );

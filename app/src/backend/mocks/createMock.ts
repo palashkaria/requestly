@@ -61,7 +61,7 @@ const createMockFromFirebase = async (
   const mockId: string | null = await addDoc(rootMocksCollectionRef, {
     ...mockData,
     ownerId,
-    ownerType: workspaceId ? "team" : "user",
+    // ownerType: workspaceId ? "team" : "user",
     deleted: false,
     createdTs: Timestamp.now().toMillis(),
     updatedTs: Timestamp.now().toMillis(),
